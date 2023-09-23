@@ -11,7 +11,7 @@
         <!--Blogs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="blogger2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="blogger2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,35 +20,35 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="blogcell" rowHeight="92" id="5Fe-6d-TgS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="blogcell" rowHeight="92" id="5Fe-6d-TgS" customClass="BlogTableViewCell" customModule="blogger2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Fe-6d-TgS" id="pyL-76-Tch">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="70j-lN-h1c">
-                                                    <rect key="frame" x="30" y="21" width="333" height="50"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="70j-lN-h1c">
+                                                    <rect key="frame" x="30" y="14" width="333" height="64"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-if-01D">
-                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-if-01D">
+                                                            <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="56.666666666666664"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bku-dY-bCL">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="20.333333333333332"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is kinda cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzk-9A-Amp">
-                                                                    <rect key="frame" x="0.0" y="33" width="130.66666666666666" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="36.333333333333336" width="166.66666666666666" height="20.333333333333336"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author : Wai Thura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-lx-CB5">
-                                                            <rect key="frame" x="213" y="0.0" width="120" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author : Wai Thura" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-lx-CB5">
+                                                            <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                             <nil key="highlightedColor"/>
@@ -58,11 +58,16 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="70j-lN-h1c" firstAttribute="leading" secondItem="pyL-76-Tch" secondAttribute="leadingMargin" constant="10" id="FFd-8B-OyP"/>
-                                                <constraint firstItem="70j-lN-h1c" firstAttribute="top" secondItem="pyL-76-Tch" secondAttribute="topMargin" constant="10" id="ZTW-xX-fdq"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="70j-lN-h1c" secondAttribute="bottom" constant="10" id="faA-q6-3sU"/>
+                                                <constraint firstItem="70j-lN-h1c" firstAttribute="top" secondItem="pyL-76-Tch" secondAttribute="topMargin" constant="3" id="ZTW-xX-fdq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="70j-lN-h1c" secondAttribute="bottom" constant="3" id="faA-q6-3sU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="70j-lN-h1c" secondAttribute="trailing" constant="10" id="zW7-1G-N35"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="xGM-lx-CB5" id="fMM-dA-8H7"/>
+                                            <outlet property="descriptionLabel" destination="Zzk-9A-Amp" id="cEc-gj-1js"/>
+                                            <outlet property="titleLabel" destination="bku-dY-bCL" id="zlu-7h-PJJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -77,20 +82,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blogs" id="I7T-5A-i3k">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3fG-aV-dtb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3fG-aV-dtb">
+                            <connections>
+                                <action selector="createBlog:" destination="BYZ-38-t0r" id="3hL-F8-zma"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="Sxa-wV-2gG" kind="show" id="RoT-ZD-T9C"/>
+                        <outlet property="blogTableView" destination="Oe2-Yt-cJo" id="eGv-EN-Y0S"/>
+                        <segue destination="Sxa-wV-2gG" kind="show" identifier="createblogsegue" id="RoT-ZD-T9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="979.38931297709917" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Blog View Controller-->
         <scene sceneID="f5i-a6-19K">
             <objects>
-                <viewController id="Sxa-wV-2gG" sceneMemberID="viewController">
+                <viewController id="Sxa-wV-2gG" customClass="CreateBlogViewController" customModule="blogger2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcU-WF-Xis">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,6 +130,9 @@
                                         <rect key="frame" x="0.0" y="201" width="353" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                        <connections>
+                                            <action selector="saveBlog:" destination="Sxa-wV-2gG" eventType="touchUpInside" id="lt9-yq-lF5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -133,6 +146,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hbg-qr-Ddm"/>
+                    <connections>
+                        <outlet property="authorTextField" destination="d3U-Br-f3T" id="TGp-hb-bSY"/>
+                        <outlet property="descriptionTextField" destination="qen-k3-KOu" id="2Nh-Zs-bCc"/>
+                        <outlet property="saveBtn" destination="gVm-Wv-DmS" id="AW8-nk-OQc"/>
+                        <outlet property="titleTextField" destination="bHg-mV-HiJ" id="8pg-mK-daL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbj-Vp-iz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

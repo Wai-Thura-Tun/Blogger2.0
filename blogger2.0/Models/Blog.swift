@@ -8,5 +8,8 @@
 import Foundation
 
 struct Blog {
-    
+    var id: Int
+    var title: String
+    var description: String
+    var author: String
 }
