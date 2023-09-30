@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061053E62AC856BE005E4679 /* EndPointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061053E52AC856BE005E4679 /* EndPointEnum.swift */; };
 		064F7F832ABBC23100534689 /* HomeViewController+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F7F822ABBC23100534689 /* HomeViewController+Router.swift */; };
 		06BB7AA72AB91F9A003C13FF /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB7AA62AB91F9A003C13FF /* BlogTableViewCell.swift */; };
 		06BB7AAB2AB9C9D3003C13FF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB7AAA2AB9C9D3003C13FF /* UIViewControllerExtension.swift */; };
@@ -21,9 +22,11 @@
 		06C756382AB89B84005377BF /* CreateBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C756372AB89B84005377BF /* CreateBlogViewController.swift */; };
 		06C7563B2AB89BA4005377BF /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7563A2AB89BA4005377BF /* HomeViewController+TableView.swift */; };
 		06C7563E2AB89BC4005377BF /* CreateBlogViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7563D2AB89BC4005377BF /* CreateBlogViewController+TextField.swift */; };
+		FA1C2FA3BD2BAE3529B95C96 /* Pods_blogger2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85930CA6F6CA2107B1EBF27 /* Pods_blogger2_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061053E52AC856BE005E4679 /* EndPointEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointEnum.swift; sourceTree = "<group>"; };
 		064F7F822ABBC23100534689 /* HomeViewController+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Router.swift"; sourceTree = "<group>"; };
 		06BB7AA62AB91F9A003C13FF /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
 		06BB7AAA2AB9C9D3003C13FF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		06C756372AB89B84005377BF /* CreateBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogViewController.swift; sourceTree = "<group>"; };
 		06C7563A2AB89BA4005377BF /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		06C7563D2AB89BC4005377BF /* CreateBlogViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateBlogViewController+TextField.swift"; sourceTree = "<group>"; };
+		4209A4578255835353C7B725 /* Pods-blogger2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blogger2.0.release.xcconfig"; path = "Target Support Files/Pods-blogger2.0/Pods-blogger2.0.release.xcconfig"; sourceTree = "<group>"; };
+		512478D4AC2408235ABEA909 /* Pods-blogger2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blogger2.0.debug.xcconfig"; path = "Target Support Files/Pods-blogger2.0/Pods-blogger2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		A85930CA6F6CA2107B1EBF27 /* Pods_blogger2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blogger2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1C2FA3BD2BAE3529B95C96 /* Pods_blogger2_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,7 @@
 		06BB7AA82AB9233E003C13FF /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				061053E52AC856BE005E4679 /* EndPointEnum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -73,6 +81,8 @@
 			children = (
 				06C756162AB88B3D005377BF /* blogger2.0 */,
 				06C756152AB88B3D005377BF /* Products */,
+				C30045A7033A28EC37CF0853 /* Pods */,
+				CD1C07C4E1A5A77B2DA1CD59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +157,23 @@
 			path = CreateBlog;
 			sourceTree = "<group>";
 		};
+		C30045A7033A28EC37CF0853 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				512478D4AC2408235ABEA909 /* Pods-blogger2.0.debug.xcconfig */,
+				4209A4578255835353C7B725 /* Pods-blogger2.0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD1C07C4E1A5A77B2DA1CD59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A85930CA6F6CA2107B1EBF27 /* Pods_blogger2_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06C756282AB88B41005377BF /* Build configuration list for PBXNativeTarget "blogger2.0" */;
 			buildPhases = (
+				9BFFB7C26734BA3802A38BAA /* [CP] Check Pods Manifest.lock */,
 				06C756102AB88B3D005377BF /* Sources */,
 				06C756112AB88B3D005377BF /* Frameworks */,
 				06C756122AB88B3D005377BF /* Resources */,
+				B4CB41323EE1272C77FD6200 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,7 +204,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					06C756132AB88B3D005377BF = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -213,6 +242,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BFFB7C26734BA3802A38BAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-blogger2.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4CB41323EE1272C77FD6200 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-blogger2.0/Pods-blogger2.0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-blogger2.0/Pods-blogger2.0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-blogger2.0/Pods-blogger2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06C756102AB88B3D005377BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +292,7 @@
 				06C756182AB88B3D005377BF /* AppDelegate.swift in Sources */,
 				06C756382AB89B84005377BF /* CreateBlogViewController.swift in Sources */,
 				06C756322AB89B4D005377BF /* Blog.swift in Sources */,
+				061053E62AC856BE005E4679 /* EndPointEnum.swift in Sources */,
 				06C7562F2AB89B3A005377BF /* APIService.swift in Sources */,
 				06C7563E2AB89BC4005377BF /* CreateBlogViewController+TextField.swift in Sources */,
 				06C7561A2AB88B3D005377BF /* SceneDelegate.swift in Sources */,
@@ -290,6 +362,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -350,6 +423,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -370,11 +444,13 @@
 		};
 		06C756292AB88B41005377BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512478D4AC2408235ABEA909 /* Pods-blogger2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBSLHJAF4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = blogger2.0/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -397,11 +473,13 @@
 		};
 		06C7562A2AB88B41005377BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4209A4578255835353C7B725 /* Pods-blogger2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBSLHJAF4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = blogger2.0/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
