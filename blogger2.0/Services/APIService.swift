@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class APIService {
     
@@ -37,6 +38,18 @@ class APIService {
             }
         }
         task.resume()
+    }
+    
+    func getBlogsWithAlamo(onSuccess: @escaping ([Blog]) -> (), onFailure: @escaping (Error) -> ()) {
+        let endPoint = EndPoint.GETBLOG
+        AF.request(endPoint.getURL(),method: endPoint.httpMethod).responseDecodable(of: [Blog].self) { response in
+            switch response.result {
+            case .success(let blogs):
+                onSuccess(blogs)
+            case .failure(let error):
+                onFailure(error)
+            }
+        }
     }
     
     //MARK: - CREATE BLOG
@@ -73,6 +86,23 @@ class APIService {
             }
         }
         task.resume()
+    }
+    
+    func createBlogWithAlamo(newBlog: Blog, onSuccess: @escaping (Blog) -> (), onFailure: @escaping (Error) -> ()) {
+        let endPoint = EndPoint.ADDBLOG
+        let paramters = [
+            "title": newBlog.title,
+            "author": newBlog.author,
+            "description": newBlog.description
+        ]
+        AF.request(endPoint.getURL(), method: endPoint.httpMethod, parameters: paramters).responseDecodable(of: Blog.self) { response in
+            switch response.result {
+            case .success(let blog):
+            onSuccess(blog)
+            case .failure(let error):
+                onFailure(error)
+            }
+        }
     }
     
     //MARK: - UPDATE BLOG
@@ -112,6 +142,23 @@ class APIService {
         task.resume()
     }
     
+    func updateBlogWithAlamo(blog: Blog, onSuccess: @escaping (Blog) -> (), onFailure: @escaping (Error) -> ()) {
+        let endPoint = EndPoint.UPDATEBLOG
+        let paramters = [
+            "title": blog.title,
+            "author": blog.author,
+            "description": blog.description
+        ]
+        AF.request(endPoint.getURL(id: blog.id), method: endPoint.httpMethod, parameters: paramters).responseDecodable(of: Blog.self) { response in
+            switch response.result {
+            case .success(let blog):
+                onSuccess(blog)
+            case .failure(let error):
+                onFailure(error)
+            }
+        }
+    }
+    
     //MARK: - DELETE BLOG
     
     func deleteBlog(id: Int, onSuccess:@escaping (Bool) -> (), onFailure:@escaping (Error) -> ()) {
@@ -129,5 +176,17 @@ class APIService {
             onSuccess(true)
         }
         task.resume()
+    }
+    
+    func deleteBlogWithAlamo(id: Int, onSuccess: @escaping (Bool) -> (), onFailure: @escaping (Error) -> ()) {
+        let endPoint = EndPoint.DELETEBLOG
+        AF.request(endPoint.getURL(id: id), method: endPoint.httpMethod).response { response in
+            switch response.result {
+            case .success(_):
+                onSuccess(true)
+            case .failure(let error):
+                onFailure(error)
+            }
+        }
     }
 }

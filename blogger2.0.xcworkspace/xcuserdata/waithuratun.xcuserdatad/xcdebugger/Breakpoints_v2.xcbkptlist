@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "309A5586-06CC-4D52-B4A3-F864D54C2A1D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "126F4876-EED3-465A-8102-5DEC547CAEC2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blogger2.0/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getBlogsWithAlamo(onSuccess:onFailure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "126F4876-EED3-465A-8102-5DEC547CAEC2 - 773fb65f0c7e0478"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blogger2_0.APIService.getBlogsWithAlamo() -&gt; ()"
+                  moduleName = "blogger2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waithuratun/Desktop/Swift/Practice/blogger2.0/blogger2.0/Services/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "126F4876-EED3-465A-8102-5DEC547CAEC2 - 768ba4d607f7fb80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blogger2_0.APIService.getBlogsWithAlamo(onSuccess: (Swift.Array&lt;blogger2_0.Blog&gt;) -&gt; (), onFailure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "blogger2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waithuratun/Desktop/Swift/Practice/blogger2.0/blogger2.0/Services/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7C82422-F448-420D-96C3-3DBDBA3DD7B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blogger2.0/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "createBlogWithAlamo(newBlog:onSuccess:onFailure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C7C82422-F448-420D-96C3-3DBDBA3DD7B0 - 54916ea9b6d8dff5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blogger2_0.APIService.updateBlog(blog: blogger2_0.Blog, onSuccess: (blogger2_0.Blog) -&gt; (), onFailure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "blogger2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waithuratun/Desktop/Swift/Practice/blogger2.0/blogger2.0/Services/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "363">
+               </Location>
+               <Location
+                  uuid = "C7C82422-F448-420D-96C3-3DBDBA3DD7B0 - 7cd5bdeaa0dbc6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blogger2_0.APIService.createBlogWithAlamo(newBlog: blogger2_0.Blog, onSuccess: (blogger2_0.Blog) -&gt; (), onFailure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "blogger2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waithuratun/Desktop/Swift/Practice/blogger2.0/blogger2.0/Services/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE226831-01FB-4A95-9325-255C3E8AC674"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blogger2.0/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "updateBlogWithAlamo(blog:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "994C8CBA-1E0C-4A2A-BE05-C91BDC7DAD05"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blogger2.0/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "deleteBlogWithAlamo(id:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

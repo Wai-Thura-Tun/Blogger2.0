@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     
     func getBlogs() {
         self.showLoading()
-        apiService.getBlogs { [weak self] blogs in
+        apiService.getBlogsWithAlamo { [weak self] blogs in
             self?.blogs = blogs
             OperationQueue.main.addOperation {
                 self?.hideLoading()
@@ -40,18 +40,15 @@ class HomeViewController: UIViewController {
         } onFailure: { error in
             print(error.localizedDescription)
         }
+
     }
     
     func deleteBlog(id: Int) {
-        apiService.deleteBlog(id: id) { [weak self] status in
+        apiService.deleteBlogWithAlamo(id: id) { [weak self] status in
             self?.getBlogs()
         } onFailure: { error in
             print(error.localizedDescription)
         }
 
-    }
-    
-    deinit {
-        print("Home View Controller has been deinitialized")
     }
 }

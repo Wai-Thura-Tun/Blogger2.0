@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum EndPoint: String {
     case GETBLOG
@@ -26,8 +27,21 @@ enum EndPoint: String {
         }
     }
     
+    var httpMethod: HTTPMethod {
+        switch self {
+        case .GETBLOG:
+            return HTTPMethod(rawValue: "GET")
+        case .ADDBLOG:
+            return HTTPMethod(rawValue: "POST")
+        case .UPDATEBLOG:
+            return HTTPMethod(rawValue: "PUT")
+        case .DELETEBLOG:
+            return HTTPMethod(rawValue: "DELETE")
+        }
+    }
+    
     func getURL(id: Int = 0) -> String {
-        let baseURL = "http://127.0.0.1:3000"
+        let baseURL = "http://localhost:3000"
         switch self {
         case .GETBLOG,.ADDBLOG:
             return "\(baseURL)/blogs"

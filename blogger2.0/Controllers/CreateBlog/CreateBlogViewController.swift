@@ -55,7 +55,7 @@ class CreateBlogViewController: UIViewController {
         
         if isBlogEditing {
             let blog = Blog(id: blog!.id, title:title, description: description, author: author)
-            apiService.updateBlog(blog: blog) { [weak self] blog in
+            apiService.updateBlogWithAlamo(blog: blog) { [weak self] blog in
                 OperationQueue.main.addOperation {
                     self?.navigationController?.popViewController(animated: true)
                 }
@@ -66,7 +66,7 @@ class CreateBlogViewController: UIViewController {
         }
         else {
             let blog = Blog(id: 0, title: title, description: description, author: author)
-            apiService.createBlog(blog: blog) { [weak self] blog in
+            apiService.createBlogWithAlamo(newBlog: blog) { [weak self] blog in
                 OperationQueue.main.addOperation {
                     self?.navigationController?.popViewController(animated: true)
                 }
